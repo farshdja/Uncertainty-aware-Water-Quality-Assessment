@@ -1,2 +1,12 @@
 # Uncertainty-aware-Water-Quality-Assessment
-Here, we introduced an innovative framework for Water Quality Index (WQI) assessment that directly incorporates data uncertainty to improve the reliability of WQ evaluations. This function performs a comprehensive analysis of water quality data, incorporating Gaussian Mixture Model (GMM) fitting, Uncertainty-aware Principal Component Analysis (UPCA), weight computation, Water Quality Index (WQI) calculation, and Sobol Sensitivity Analysis. The primary objectives are: 1. Examine the effect of different levels of uncertainty in water quality data on the results of the principal component analysis. 2. Quantify the impact of parameter uncertainty on the WQI due to the uncertainty of the input data. 3. Identify, through sensitivity analysis, which quality parameters significantly contribute to the propagation of uncertainty in the WQI at each monitoring station. 
+This repository introduces an innovative framework for Water Quality Index (WQI) assessment that directly incorporates data uncertainty to enhance the reliability of water quality evaluations. The core function, UWQI_SA.m, performs a comprehensive analysis of water quality data, integrating Gaussian Mixture Model (GMM) fitting, Uncertainty-aware Principal Component Analysis (UPCA), weight computation, WQI calculation, and Sobol Sensitivity Analysis. The primary objectives of this framework are: 1) Examining the impact of varying levels of uncertainty in water quality data on Principal Component Analysis (PCA) outcomes. 2) Quantifying how weighting uncertainty influences the WQI due to input data variability. 3) Identifying, through sensitivity analysis, which water quality parameters significantly contribute to the propagation of uncertainty in the WQI at each monitoring station.
+
+Requirements
+To utilize and test the proposed approach, ensure that MATLAB is installed on your system. For detailed system requirements and installation guidelines, please refer to the official MATLAB documentation.
+
+Usage Guidelines
+To effectively employ this framework, follow these steps:
+
+Data Preprocessing: Utilize the data_preprocessing.m function to prepare your water quality data. This step ensures that the data is cleansed of outliers and standardized to a consistent temporal resolution, facilitating accurate analysis.
+
+Uncertainty-aware Analysis: Execute the UWQI_SA.m function with the preprocessed data. This function will conduct the GMM fitting, UPCA, weight computations, WQI calculations, and Sobol Sensitivity Analysis. The outcomes will be stored in the output structure for further examination and interpretation.
